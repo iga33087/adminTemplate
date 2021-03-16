@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif+TC:wght@200&display=swap');
+
+$color1:#a6c0fe;
+$color2:#f68084;
+$color3:rgba(255,255,255,0.2);
+
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -moz-linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -webkit-linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -o-linear-gradient(45deg, $color1 20%, $color2 100%);
+}
+
+#app {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+}
+
+.content {
+  width: calc(100% - 220px);
+}
+
+.contentView {
+  height: calc(100% - 60px);
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  .headerBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+  }
+  .headerBoxTitle {
+    font-size: 30px;
+    letter-spacing: 20px;
+  }
+  .headerBoxInfo {
+    font-size: 30px;
+  }
+}
+
+.box {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  .boxTitle {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#fff;
+  }
+  .boxContent {
+    padding: 10px;
+    background-color: $color3;
+  }
+}
+
+.adminBox {
+  border:1px solid #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  .adminBoxTitle {
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    font-weight: bold;
+  }
+  .adminBoxContent {
+    padding: 20px;
+    background-color: $color3;
+  }
+}
+
+.leftMenu {
+  width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  border:1px solid #fff;
+  border-radius: 20px;
+  background-color: $color3;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.leftMenuItem {
+  padding: 20px;
+  text-align: center;
+  color:#fff;
+  font-size: 28px;
+  transition-duration: 0.2s;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    background-color: $color3;
+    color:$color1;
+  }
+  &:hover .leftMenuItemBoxChildren {
+    opacity: 1;
+    visibility: visible;
+  }
+  .leftMenuItemBoxChildren {
+    width: 200px;
+    position: absolute;
+    top:0;
+    right:-220px;
+    z-index: 3;
+    box-sizing: border-box;
+    border:1px solid #fff;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.8);
+    margin-right: 20px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.2s;
+  }
+}
