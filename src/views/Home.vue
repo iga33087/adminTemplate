@@ -11,6 +11,149 @@
         <box/>
       </el-col>
     </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="20">
+      <el-col :span="8">
+        <box title="TITLE"/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+      <el-col :span="8">
+        <box/>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
