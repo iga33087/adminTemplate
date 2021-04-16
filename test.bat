@@ -7,7 +7,7 @@ git add favicon.ico -f
 ::  echo %%i
 ::  git add %%i -f
 ::)
-git commit 123 -m
+git commit -m "bat"
 git push
 git status
 pause
