@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="$store.state.bgMode">
     <leftMenu/>
     <div class="content">
       <Header/>
@@ -17,6 +17,9 @@ import Header from '@/components/header.vue'
 import leftMenu from '@/components/leftMenu.vue'
 
 export default {
-  components: {simplebar,Header,leftMenu}
+  components: {simplebar,Header,leftMenu},
+  created() {
+    if(!localStorage.bgMode) this.$store.commit('bgMode','bgMode1')
+  }
 }
 </script>

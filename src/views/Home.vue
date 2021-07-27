@@ -2,7 +2,9 @@
   <div class="home">
     <el-row :gutter="20">
       <el-col :lg="8">
-        <box title="TITLE">123</box>
+        <box title="TITLE">
+          <randomChart/>
+        </box>
       </el-col>
       <el-col :lg="16">
         <box title="MAP">
@@ -12,13 +14,13 @@
     </el-row>
     <el-row :gutter="20">
       <el-col :lg="8">
-        <box title="TITLE"/>
+        <box title="CHART 1"/>
       </el-col>
       <el-col :lg="8">
-        <box/>
+        <box title="CHART 2"/>
       </el-col>
       <el-col :lg="8">
-        <box/>
+        <box title="CHART 3"/>
       </el-col>
     </el-row>
   </div>
@@ -27,9 +29,10 @@
 <script>
 import box from '@/components/box.vue'
 import leafMap from '@/components/leafMap.vue'
+import randomChart from '@/components/RandomChart.vue'
 
 export default {
   name: 'Home',
-  components: {box,leafMap}
+  components: {box,leafMap,randomChart}
 }
 </script>

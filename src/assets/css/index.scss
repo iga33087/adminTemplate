@@ -3,6 +3,12 @@
 $color1:#a6c0fe;
 $color2:#f68084;
 $color3:rgba(255,255,255,0.2);
+$color4:rgba(255,255,255,0.4);
+
+$color1Mode2:#30cfd0;
+$color2Mode2:#330867;
+$color3Mode2:rgba(255,255,255,0.2);
+$color4Mode2:rgba(255,255,255,0.4);
 
 $xs: 360px;
 $sm: 575.98px;
@@ -21,10 +27,6 @@ html,body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(45deg, $color1 20%, $color2 100%);
-  background: -moz-linear-gradient(45deg, $color1 20%, $color2 100%);
-  background: -webkit-linear-gradient(45deg, $color1 20%, $color2 100%);
-  background: -o-linear-gradient(45deg, $color1 20%, $color2 100%);
 }
 
 #app {
@@ -32,6 +34,20 @@ html,body {
   box-sizing: border-box;
   padding: 20px;
   display: flex;
+}
+
+.bgMode1 {
+  background: linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -moz-linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -webkit-linear-gradient(45deg, $color1 20%, $color2 100%);
+  background: -o-linear-gradient(45deg, $color1 20%, $color2 100%);
+}
+
+.bgMode2 {
+  background: linear-gradient(45deg, $color1Mode2 20%, $color2Mode2 100%);
+  background: -moz-linear-gradient(45deg, $color1Mode2 20%, $color2Mode2 100%);
+  background: -webkit-linear-gradient(45deg, $color1Mode2 20%, $color2Mode2 100%);
+  background: -o-linear-gradient(45deg, $color1Mode2 20%, $color2Mode2 100%);
 }
 
 .content {
@@ -43,6 +59,7 @@ html,body {
 
 .contentView {
   height: calc(100% - 60px);
+  overflow: hidden;
 }
 
 .contentViewBar {
@@ -93,6 +110,7 @@ html,body {
     padding: 10px;
     background-color: $color3;
     overflow: hidden;
+    word-break: break-all;
   }
 }
 
@@ -142,5 +160,45 @@ html,body {
     opacity: 0;
     visibility: hidden;
     transition-duration: 0.2s;
+  }
+}
+
+.tableList {
+  .tableListBoxHeader {
+    background-color: $color4;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-size: 22px;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .tableListBoxList {
+    background-color: $color3;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    font-size: 22px;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.role {
+  .roleItem {
+    padding: 10px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+  }
+  .roleItemIsChange {
+    background-color: rgba(255,255,255,0.2);
   }
 }
